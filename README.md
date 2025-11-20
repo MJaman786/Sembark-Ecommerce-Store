@@ -7,7 +7,7 @@ This project demonstrates clean UI components, reusable architecture, and scalab
 
 ## 🚀 **Demo Screenshot**
 
-![App Screenshot](./image.png)
+![App Screenshot](./screenShoot.png)
 
 ---
 
