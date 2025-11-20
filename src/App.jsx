@@ -19,7 +19,7 @@ function App() {
             </Routes>
           </main>
           <footer className="bg-white border-t border-gray-100 py-8 text-center text-gray-500 text-sm">
-            <p>© This is Footer Section</p>
+            <p>Thank for Visiting</p>
           </footer>
         </div>
       </Router>
