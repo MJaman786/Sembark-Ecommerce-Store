@@ -1,16 +1,94 @@
-# React + Vite
+# 📦 **Sembark Ecommerce Store**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **Ecommerce Web Application** built with **React + Vite**, **TailwindCSS**, and **React Router**.
+This project demonstrates clean UI components, reusable architecture, and scalable project structure.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 **Demo Screenshot**
 
-## React Compiler
+![App Screenshot](./image.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📚 **Features**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* ⚡ Lightning-fast development using **Vite**
+* 🎨 Styled with **TailwindCSS**
+* 🔗 **React Router** for navigation
+* 💡 Cleaner class management using **clsx** & **tailwind-merge**
+* 🖼️ Icons from **Lucide React**
+* 📁 Clean folder structure
+* 📱 Fully responsive UI
+
+---
+
+## 🛠️ **Tech Stack**
+
+| Technology                | Purpose                |
+| ------------------------- | ---------------------- |
+| **React**                 | UI library             |
+| **Vite**                  | Build tool             |
+| **TailwindCSS**           | Styling                |
+| **React Router**          | Routing                |
+| **Lucide React**          | Icons                  |
+| **clsx + tailwind-merge** | Utility class handling |
+
+---
+
+## **Installation & Setup**
+
+Follow these steps to run the project locally.
+
+---
+
+### **1. Clone the Repository**
+
+```bash
+git clone "https://github.com/MJaman786/Sembark-Ecommerce-Store.git"
+```
+
+---
+
+### 📂 **2. Navigate into the Project Directory**
+
+```bash
+cd Sembark-Ecommerce-Store
+```
+
+---
+
+### 📦 **3. Install Dependencies**
+
+```bash
+npm install
+```
+
+---
+
+### ▶️ **5. Start Development Server**
+
+```bash
+npm run dev
+```
+
+---
+
+### ▶️ **6. Build for Production**
+
+```bash
+npm run build
+```
+
+---
+
+## 🧪 **Scripts Available**
+
+| Command           | Description              |
+| ----------------- | ------------------------ |
+| `npm run dev`     | Start Vite dev server    |
+| `npm run build`   | Build production assets  |
+| `npm run preview` | Preview production build |
+| `npm install`     | Install dependencies     |
+
+---
