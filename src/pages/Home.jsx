@@ -9,7 +9,6 @@ const Home = () => {
   const activeCategory = searchParams.get('category');
   const sortOrder = searchParams.get('sort') || 'asc';
 
-  // Use our new custom hook
   const { data: products, loading, error } = useFetchProducts(activeCategory, sortOrder);
 
   const handleCategoryChange = (cat) => {

@@ -7,7 +7,6 @@ const FilterBar = ({ activeCategory, sortOrder, onCategoryChange, onSortChange }
   const [isSortOpen, setIsSortOpen] = useState(false);
   const sortRef = useRef(null);
 
-  // UX Improvement: Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (sortRef.current && !sortRef.current.contains(event.target)) {
@@ -31,13 +30,12 @@ const FilterBar = ({ activeCategory, sortOrder, onCategoryChange, onSortChange }
   return (
     <div className="mb-8 space-y-6">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        {/* Title Section */}
         <div>
           <h1 className="text-3xl font-bold text-primary">New Arrivals</h1>
           <p className="text-gray-500 mt-1">Explore our latest collection</p>
         </div>
 
-        {/* Custom Sort Dropdown */}
+        
         <div className="relative" ref={sortRef}>
           <button
             onClick={() => setIsSortOpen(!isSortOpen)}
@@ -55,7 +53,7 @@ const FilterBar = ({ activeCategory, sortOrder, onCategoryChange, onSortChange }
             />
           </button>
 
-          {/* Dropdown Menu */}
+        
           {isSortOpen && (
             <div className="absolute right-0 mt-2 w-56 bg-white rounded-xl border border-gray-100 shadow-xl shadow-gray-200/50 z-50 overflow-hidden animate-in fade-in zoom-in-95 duration-100">
               <div className="p-1">
@@ -79,7 +77,7 @@ const FilterBar = ({ activeCategory, sortOrder, onCategoryChange, onSortChange }
         </div>
       </div>
 
-      {/* Category Tabs (Pill Design) */}
+      
       <div className="flex flex-wrap gap-2">
         <button
           onClick={() => onCategoryChange(null)}

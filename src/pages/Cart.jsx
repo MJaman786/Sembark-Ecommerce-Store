@@ -23,14 +23,14 @@ const Cart = () => {
       <h1 className="text-3xl font-bold text-primary mb-8">Shopping Cart</h1>
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Cart Items List - Now using the CartItem component */}
+        
         <div className="lg:col-span-2 space-y-4">
           {cart.map((item) => (
             <CartItem key={item.id} item={item} />
           ))}
         </div>
 
-        {/* Order Summary */}
+       
         <div className="h-fit bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
           <h3 className="text-lg font-bold text-primary mb-4">Order Summary</h3>
           <div className="space-y-3 mb-6">

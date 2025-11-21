@@ -6,7 +6,7 @@ export const useFetchProducts = (category, sortOrder) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // 1. Create an AbortController to manage the network request
+    
     const controller = new AbortController();
     const signal = controller.signal;
 
@@ -21,7 +21,7 @@ export const useFetchProducts = (category, sortOrder) => {
         }
         url += `?sort=${sortOrder}`;
 
-        // 2. Pass the 'signal' to the fetch call
+      
         const res = await fetch(url, { signal });
         
         if (!res.ok) throw new Error('Failed to fetch products');
@@ -29,13 +29,13 @@ export const useFetchProducts = (category, sortOrder) => {
         const result = await res.json();
         setData(result);
       } catch (err) {
-        // 3. Ignore errors caused by us cancelling the request deliberately
+        
         if (err.name !== 'AbortError') {
           console.error("Fetch error:", err);
           setError(err.message);
         }
       } finally {
-        // Only turn off loading if the component is still mounted and request wasn't aborted
+        
         if (!signal.aborted) {
           setLoading(false);
         }
@@ -44,8 +44,6 @@ export const useFetchProducts = (category, sortOrder) => {
 
     fetchData();
 
-    // 4. Cleanup function: Cancels the request if the component unmounts 
-    // or if dependencies (category/sortOrder) change quickly.
     return () => controller.abort();
 
   }, [category, sortOrder]);
